@@ -1,4 +1,3 @@
- # Temperature converter using ReactJS #
 
 ##  Requirement ##
 Temperature Converter using Simple React Hook
