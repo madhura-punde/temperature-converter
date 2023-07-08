@@ -1,6 +1,6 @@
  # Temperature converter using ReactJS #
 
-##  REQUIREMENT ##
+##  Requirement ##
 Temperature Converter using Simple React Hook
 
 
