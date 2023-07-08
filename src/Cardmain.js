@@ -7,26 +7,26 @@ function Cardmain() {
   const [cel, setcel] = useState('0')
   const [Far, SetFar] = useState('0')
 
-  const HandleUserInput=(e)=>{
+  const HandleCelciusData=(e)=>{
     console.log('In Cel',e.target.value)
     setcel((e.target.value.toString()))
     console.log(cel)
 
     // if(cel){
-      const res = ((cel*(9/5))+32)
+      const res = (cel*1.8)+32
       SetFar(res)
-      console.log(res)
+      console.log({res})
 
     // }
     // (C × 9/5) + 32 = F
   }
-  const HandleUserInput1=(e)=>{
+  const HandleFarhData=(e)=>{
     console.log('In Far')
     SetFar((e.target.value.toString()))
     const res = (Far-32)/(9/5)
-    console.log(res)
+    console.log({res})
       setcel(res)
-      console.log(Far)
+      console.log({Far})
   }
 
 
@@ -42,24 +42,24 @@ function Cardmain() {
                     <input placeholder='Celcius' value={cel} 
                       onChange={(e)=>{
                         console.log(e.target)
-                        HandleUserInput(e)
+                        HandleCelciusData(e)
                                      }}/>
 
-                      <fieldset disabled>
-                       <select class="custom-select ">
-                       <option selected>Celcius</option>
+                       <fieldset disabled>
+                       <select className="custom-select ">
+                       <option defaultValue={"selected"}>Celcius</option>
                        </select>
                        </fieldset>
                    
                   
                     <input placeholder='Far' value={Far} 
                       onChange={(e)=>{
-                        HandleUserInput1(e)}}
+                        HandleFarhData(e)}}
                        style={{'marginTop': '20px'}} />
 
                       <fieldset disabled>
-                       <select class="custom-select mr-sm-2">
-                       <option selected>Fahrenheit</option>
+                       <select className="custom-select mr-sm-2">
+                       <option defaultValue={'Selected'}>Fahrenheit</option>
                        </select>
                        </fieldset>
                     
