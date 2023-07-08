@@ -1,13 +1,16 @@
-Temperature converter using ReactJS 
+ # Temperature converter using ReactJS #
 
-#REQUIREMENT
-User must be able to convert temperature from Cel to Far and vice versa.
+##  REQUIREMENT ##
+Temperature Converter using Simple React Hook
 
 
-#Description
+## Description ##
 1) Bootstrap is used for styling an application.
 2) There are 2 input fields in Bootstrap Card component.
 3) useState Hook is used for tracking the current value in the component. 
-4) Main code is in the App.js file as it was a simple application,avoided 
-   using components folder. 
-5) Onchnage method is applied for an input so as to get the required results.
+4) Implementation is written in Cardmain.js file.
+
+   ## View ##
+   Final Overview
+
+   <img width="1068" alt="Temperature-Converter" src="https://github.com/madhura-punde/temperature-converter/assets/101276214/1e0fb0bc-e6a7-4f65-8fd7-0aed9cdc5f58">
